@@ -30,12 +30,12 @@ public class BaseballGame {
 		Scanner scan = new Scanner(System.in);
 		int yourNumber;
 		while(true) {
-			System.out.print("¼¼ ÀÚ¸® ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+			System.out.print("ì„¸ ìë¦¬ ìˆ«ìë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 			yourNumber = scan.nextInt();
 			if(yourNumber > 0 && yourNumber < 1000) {
 				break;
 			}
-			System.out.println("¼ıÀÚ ¹üÀ§¸¦ Àç ¼³Á¤ ÇØÁÖ¼¼¿ä.");
+			System.out.println("ìˆ«ì ë²”ìœ„ë¥¼ ì¬ ì„¤ì • í•´ì£¼ì„¸ìš”.");
 		}
 		y_first = yourNumber / 100;
 		y_second = (yourNumber / 10) % 10;
@@ -63,15 +63,15 @@ public class BaseballGame {
 		while(bg.count < 5) {
 			bg.setYourNumber();
 			bg.compare();
-			System.out.println(bg.ball + "º¼ " + bg.strike + " ½ºÆ®¶óÀÌÅ©");
-			System.out.println("±âÈ¸ (" + bg.count + "/ 5)");
-			System.out.println(bg.c_first +""+bg.c_second +""+ bg.c_third);
-			System.out.println(bg.y_first +""+ bg.y_second +""+ bg.y_third);
+			System.out.println(bg.ball + "ë³¼ " + bg.strike + " ìŠ¤íŠ¸ë¼ì´í¬");
+			System.out.println("ê¸°íšŒ (" + bg.count + "/ 5)");
+//			System.out.println(bg.c_first +""+bg.c_second +""+ bg.c_third);
+//			System.out.println(bg.y_first +""+ bg.y_second +""+ bg.y_third);
 			if(bg.strike >=3) {
-				System.out.println("°ÔÀÓ¿¡¼­ ½Â¸®ÇÏ¼Ì½À´Ï´Ù.");
+				System.out.println("ê²Œì„ì—ì„œ ìŠ¹ë¦¬í•˜ì…¨ìŠµë‹ˆë‹¤.");
 				System.exit(0);
 			}
 		}
-		System.out.println("¸ğµç ±âÈ¸°¡ ³¡³µ½À´Ï´Ù. ´Ù½Ã ½ÃÀÛÇØÁÖ¼¼¿ä");
+		System.out.println("ëª¨ë“  ê¸°íšŒê°€ ëë‚¬ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œì‘í•´ì£¼ì„¸ìš”");
 	}
 }
